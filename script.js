@@ -1,9 +1,15 @@
-// Menu hamburger
 const burger = document.getElementById('burger');
 const nav = document.getElementById('mainNav');
 
-burger.addEventListener('click', () => nav.classList.toggle('open'));
-document.querySelectorAll('nav a').forEach(link => link.addEventListener('click', () => nav.classList.remove('open')));
+burger.addEventListener('click', () => {
+  const isOpen = nav.classList.toggle('open');
+  burger.classList.toggle('active', isOpen);
+});
+
+document.querySelectorAll('nav a').forEach(link => link.addEventListener('click', () => {
+  nav.classList.remove('open');
+  burger.classList.remove('active');
+}));
 
 // Scroll reveal
 const observer = new IntersectionObserver(entries => {
