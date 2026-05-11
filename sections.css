@@ -200,14 +200,19 @@
 }
 
 /* COMPÉTENCES */
-.skills-cat {
+.skills-category-title {
   font-family: Georgia, 'Times New Roman', serif;
-  font-size: .78rem;
-  letter-spacing: .22em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  letter-spacing: .12em;
+  color: var(--violet-lt);
+  margin-bottom: 1.8rem;
+  margin-top: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--border);
+}
+
+.skills-category-title:first-of-type {
+  margin-top: 0;
 }
 
 .skills-grid {
